@@ -1,39 +1,283 @@
-#main_head {
-  border: solid 1px red; }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?x40gh3");
+  src: url("fonts/icomoon.eot?x40gh3#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?x40gh3") format("truetype"), url("fonts/icomoon.woff?x40gh3") format("woff"), url("fonts/icomoon.svg?x40gh3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-#main_container {
-  border: solid 1px blue;
-  display: -webkit-flex;
-  display: flex;
-  margin: 10px;
-  padding: 20px; }
+.icon-home:before {
+  content: "\e900"; }
 
-#nav_containder {
-  width: 400px; }
+.icon-pencil2:before {
+  content: "\e901"; }
 
-#article_container {
-  border: solid 1px green; }
+.icon-pen:before {
+  content: "\e902"; }
 
-.article_header {
-  background-color: salmon; }
+.icon-books:before {
+  content: "\e910"; }
 
-.article_detalis {
-  display: -webkit-flex;
-  display: flex; }
+.icon-file-text:before {
+  content: "\e600"; }
 
-.article_detalis img {
-  width: 200px;
-  height: 100px;
-  margin: 5px; }
+.icon-file-empty:before {
+  content: "\e903"; }
 
-.article_detalis p {
-  margin: 5px;
-  padding: 10px; }
+.icon-files-empty:before {
+  content: "\e904"; }
+
+.icon-file-text2:before {
+  content: "\e905"; }
+
+.icon-file-play:before {
+  content: "\e601"; }
+
+.icon-folder:before {
+  content: "\e906"; }
+
+.icon-folder-open:before {
+  content: "\e602"; }
+
+.icon-folder-plus:before {
+  content: "\e907"; }
+
+.icon-folder-minus:before {
+  content: "\e908"; }
+
+.icon-price-tag:before {
+  content: "\e911"; }
+
+.icon-address-book:before {
+  content: "\e603"; }
+
+.icon-drawer:before {
+  content: "\e604"; }
+
+.icon-floppy-disk:before {
+  content: "\e909"; }
+
+.icon-bubbles2:before {
+  content: "\e605"; }
+
+.icon-bubble2:before {
+  content: "\e912"; }
+
+.icon-user:before {
+  content: "\e913"; }
+
+.icon-user-plus:before {
+  content: "\e90a"; }
+
+.icon-user-minus:before {
+  content: "\e90b"; }
+
+.icon-spinner3:before {
+  content: "\e914"; }
+
+.icon-search:before {
+  content: "\e90c"; }
+
+.icon-key:before {
+  content: "\e915"; }
+
+.icon-stats-dots:before {
+  content: "\e90d"; }
+
+.icon-bin:before {
+  content: "\e90e"; }
+
+.icon-clipboard:before {
+  content: "\e90f"; }
+
+.icon-link:before {
+  content: "\e916"; }
+
+.icon-notification:before {
+  content: "\e917"; }
+
+.icon-cross:before {
+  content: "\e918"; }
+
+.icon-checkmark:before {
+  content: "\e919"; }
+
+.icon-play2:before {
+  content: "\e91a"; }
+
+.icon-pause:before {
+  content: "\e91b"; }
+
+.icon-stop:before {
+  content: "\e91c"; }
+
+.icon-previous:before {
+  content: "\e91d"; }
+
+.icon-next:before {
+  content: "\e91e"; }
+
+.icon-backward:before {
+  content: "\e91f"; }
+
+.icon-forward2:before {
+  content: "\e920"; }
+
+.icon-facebook2:before {
+  content: "\e607"; }
+
+.icon-twitter:before {
+  content: "\e606"; }
+
+.icon-youtube:before {
+  content: "\e921"; }
+
+.icon-twitch:before {
+  content: "\e60c"; }
+
+.icon-vimeo2:before {
+  content: "\e608"; }
+
+.icon-steam2:before {
+  content: "\e609"; }
+
+.icon-github:before {
+  content: "\e922"; }
+
+.icon-tumblr2:before {
+  content: "\e60a"; }
+
+.icon-linkedin2:before {
+  content: "\e923"; }
+
+.icon-pinterest:before {
+  content: "\e60b"; }
+
+.icon-paypal:before {
+  content: "\e924"; }
+
+html {
+  width: 100%; }
+
+body {
+  background-color: #20B2AA;
+  margin: 0;
+  font-family: RobotoDraft;
+  padding: 128px 0 0 0;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
 
 .spase_between {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: baseline; }
+
+#main_head {
+  background-color: #FFE4C4;
+  width: 100%;
+  color: #20B2AA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 64px; }
+  #main_head a {
+    color: #20B2AA;
+    margin-right: 20px;
+    font-size: 30px;
+    float: right; }
+  #main_head h1 {
+    margin: 17px 0 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 400; }
+
+#main_container {
+  position: relative; }
+
+#nav_containder {
+  color: #20B2AA;
+  margin-right: 20px;
+  background: #FFE4C4;
+  width: 250px;
+  max-height: 400px;
+  text-align: center;
+  position: fixed;
+  top: 120px;
+  left: 50px; }
+  #nav_containder ul {
+    padding: 0;
+    margin: 0; }
+  #nav_containder ul li {
+    list-style: none;
+    height: 50px;
+    line-height: 300%; }
+  #nav_containder li:hover {
+    background-color: #FA8072;
+    color: GhostWhite; }
+
+#article_container {
+  padding: 0 0 0 350px;
+  color: GhostWhite; }
+  #article_container section {
+    margin: 0 30px 40px 0; }
+
+.article_header {
+  background-color: #FFE4C4;
+  height: 100px; }
+  .article_header .icon {
+    padding: 10px;
+    font-size: 30px;
+    background: #20B2AA;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    right: 10px;
+    color: GhostWhite; }
+  .article_header .icon:hover {
+    -webkit-transform: rotate(360deg);
+    /* Safari */
+    transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 2s;
+    /* Safari */
+    transition: transform 2s; }
+  .article_header .title {
+    display: block;
+    text-align: center;
+    min-width: 150px;
+    background-color: #FA8072;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 2px; }
+
+.article_detalis {
+  display: -webkit-flex;
+  display: flex;
+  height: 200px; }
+  .article_detalis img {
+    width: 300px; }
+  .article_detalis .article_description {
+    margin: 0;
+    height: 100%;
+    background-color: #FA8072; }
+    .article_detalis .article_description p {
+      margin: 10px; }
 
 /*# sourceMappingURL=index.css.map */
