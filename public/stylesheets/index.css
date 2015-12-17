@@ -1,0 +1,39 @@
+#main_head {
+  border: solid 1px red; }
+
+#main_container {
+  border: solid 1px blue;
+  display: -webkit-flex;
+  display: flex;
+  margin: 10px;
+  padding: 20px; }
+
+#nav_containder {
+  width: 400px; }
+
+#article_container {
+  border: solid 1px green; }
+
+.article_header {
+  background-color: salmon; }
+
+.article_detalis {
+  display: -webkit-flex;
+  display: flex; }
+
+.article_detalis img {
+  width: 200px;
+  height: 100px;
+  margin: 5px; }
+
+.article_detalis p {
+  margin: 5px;
+  padding: 10px; }
+
+.spase_between {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+/*# sourceMappingURL=index.css.map */
