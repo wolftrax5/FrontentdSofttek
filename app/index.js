@@ -14,7 +14,7 @@ app.init();
 function init() {
 
   var xmlhttp = new XMLHttpRequest();
-  var url = "blogs.txt";
+  var url = "app/blogs.txt";
     
   xmlhttp.onreadystatechange = function() {
   if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
