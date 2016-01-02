@@ -15,12 +15,11 @@ function init() {
 
   var xmlhttp = new XMLHttpRequest();
   var url = "app/blogs.txt";
-    
+  var section; 
   xmlhttp.onreadystatechange = function() {
   if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      var myArr = JSON.parse(xmlhttp.responseText);
-       // this.addSections(myArr);
-       console.log(myArr);
+      section = JSON.parse(xmlhttp.responseText);
+      app.addSections(section);
       }
     };
     xmlhttp.open("GET", url, true);
@@ -44,7 +43,11 @@ function domApiFunc(){
   }
   function addItems(items, callBack){
     for (var i = 0; i < items.length; i++) {
-        callBack('<section><header class="article_header spase_between"><section><header class="article_header spase_between"><h4 class="title">'+items[i].title+'</h4><a href="#"><div class="icon"><span class="icon-file-text2"></div></span></a></header></section>');
+      callBack('<section><header class="article_header spase_between"><h4 class="title">'+items[i].title+'</h4><a href="#"><div class="icon"><span class="icon-file-text2"></div></span></a></header>'
+        +
+        '<article class="article_detalis"><img src="'+items[i].uri_img+'" alt=""><div class="article_description"><p>'+items[i].description+'</p></div></article></section>'
+
+        );
     };
   }
   var publicAPI = {
