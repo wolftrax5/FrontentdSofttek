@@ -167,6 +167,20 @@
 .icon-paypal:before {
   content: "\e924"; }
 
+.rotateY {
+  cursor: pointer; }
+
+.rotateY:hover {
+  transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  transform-origin: center;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
+  transition: transform 1.0s ease all;
+  -moz-transition: -moz-transform 1.0s ease all;
+  -webkit-transition: -webkit-transform 1.0s ease all; }
+
 html {
   width: 100%; }
 
@@ -245,7 +259,7 @@ a {
     padding: 0 10px 0 10px; }
     #article_container section {
       margin: 0 10px 40px 10px;
-      height: 600px;
+      height: 500px;
       background-color: #FA8072; } }
 .article_header {
   background-color: #FFE4C4;
@@ -259,13 +273,6 @@ a {
     text-align: center;
     right: 10px;
     color: GhostWhite; }
-  .article_header .icon:hover {
-    -webkit-transform: rotate(360deg);
-    /* Safari */
-    transform: rotate(360deg);
-    -webkit-transition: -webkit-transform 2s;
-    /* Safari */
-    transition: transform 2s; }
   .article_header .title {
     display: block;
     text-align: center;
@@ -281,7 +288,7 @@ a {
   .article_header {
     height: 70px; }
     .article_header .icon {
-      top: 520px;
+      top: 420px;
       right: 160px; }
     .article_header .title {
       bottom: 10px;

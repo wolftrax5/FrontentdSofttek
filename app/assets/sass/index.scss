@@ -1,4 +1,5 @@
 @import 'fount';
+@import 'animation';
 
 $color_contrast: #FFE4C4;  
 $color_primary: #20B2AA;  
@@ -106,7 +107,7 @@ a{
 		padding:0 10px 0 10px;
 		section {
 		margin: 0 10px 40px 10px;
-		height: 600px;
+		height: 500px;
 		background-color: $color_second;
 	}
 	}
@@ -125,14 +126,6 @@ a{
 		right: 10px;
 		color:$font_color;
 	}
-	.icon:hover{
-		-webkit-transform: rotate(360deg); /* Safari */
-	    transform: rotate(360deg);
-
-	    -webkit-transition:  -webkit-transform 2s; /* Safari */
-   		 transition: transform 2s;
-
-	}
 
 	.title{
 		display: block;
@@ -150,7 +143,7 @@ a{
 	.article_header{ 
 		height: 70px;
 		.icon {
-			top: 520px;
+			top: 420px;
     		right: 160px;
 		}
 		.title{
