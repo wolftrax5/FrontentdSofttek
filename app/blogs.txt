@@ -14,5 +14,5 @@
 		"title":"Title 3",
 		"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit quasi blanditiis nulla quaerat nam sunt quidem ut mollitia, et totam itaque dolores ullam qui veniam harum velit, voluptatibus asperiores!",
 		"uri_img":"http://lorempixel.com/400/200"
-	},
-];
+	}
+]
